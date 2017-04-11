@@ -8,6 +8,8 @@
 
 
 
-public class Main {
+public class Main extends Application {
+	
+	//enter code here
 
 }
