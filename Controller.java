@@ -1,6 +1,6 @@
 //Controller
 
-public class NameController 
+public class WittyCoffeeController 
 {
 //enter code here and name controller
 }
