@@ -1,1 +1,26 @@
 //Add FMXL Code Here
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+	fx:controller="WittyCoffee"
+	alignment="center" spacing ="10" >
+	<Label fx:id="headerText" text= "Witty Coffee Machine"/>
+</HBox alignment="left"  spacing="10" >
+	<Button fx:id="blackCoffee" text="BlackCoffee" 
+			onAction="#dispense"/>
+	<Button fx:id="coffeeWithSugar" text="Coffee with Sugar" 
+			onAction="#dispense"/>
+	<Button fx:id="coffeeWithSugarAndCreamer" text="Coffee with Sugar and Creamer" 
+			onAction="#dispense"/>
+	</HBox>
+</HBox alignment="right" spacing="10" >
+	<Label text="Current Selection" />
+	<Label fx:id="currentSelection" text="" />
+	<Label text="Amount paid:" />
+	<Label fx:id="amountPaid" text="" />
+	
+	</HBox>
+</VBox>	
