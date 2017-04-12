@@ -33,10 +33,7 @@ public class Controller {
 		@FXML protected void calculateAmountPaid( ActionEvent ae ) {
 			String amountPaid = moneyPutIn.getText();
 			double amountNumber = Double.parseDouble( amountPaid);
-			
 		}
 		
-		
-	}
 
 }
