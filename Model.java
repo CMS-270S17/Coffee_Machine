@@ -18,8 +18,9 @@ public class Model {
 	/**
 	 * Constructor for the Coffee Machine
 	 */
-	public Model(){
+	public Model(String coffeeType){
 		setPrice(0.35);
+		setCoffeeType(coffeeType);
 	}
 	
 	/**
