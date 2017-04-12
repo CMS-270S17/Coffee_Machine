@@ -13,7 +13,7 @@ public class Controller {
 			
 			@FXML private Button enter, go, cancel;
 			@FXML private RadioButton blackCoffee, coffeeWithSugar, coffeeWithSugarAndCreamer;
-			@FXML private Label headerText, currentSelection, amountPaid, change;
+			@FXML private Label headerText, amountPaid, change;
 			@FXML private TextField moneyPutIn;
 			
 			public static final NumberFormat MONEY = NumberFormat.getCurrencyInstance(); 
