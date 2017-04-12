@@ -75,16 +75,11 @@ public class Model {
 	 *          if the amount < price, returns a statement asking for more money
 	 *          
 	 */
-	public String calculateChange(double amount){
-		String changeString;
-		if(amount > price){
-			double change = amount - price;
-			changeString = "Your change is: "+ MONEY.format(change);
-		}
-		else if(amount < price){
-			changeString = "Please put in more money. The price is : " + MONEY.format(price);
-		}
-		return changeString;
+	public double calculateChange(double amount){
+			
+		double change = amount - price;
+		return change;
+			
 	}
 	/**
 	 * method sets the coffe's type and calls the methods to make that coffee
