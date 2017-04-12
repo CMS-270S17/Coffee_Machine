@@ -7,8 +7,6 @@
 	
 public class Controller {
 
-	public class CoffeeController {
-		
 		@FXML private Button blackCoffee, coffeeWithSugar, coffeeWithSugarAndCreamer;
 		@FXML private Label headerText, currentSelection, amountPaid;
 		@FXML private TextField moneyPutIn;
@@ -30,6 +28,12 @@ public class Controller {
 			} else if (ae.getSource( ) ) == coffeeWithCreamerAndSugar) {
 				cc.setCoffeeType( "Sugar and Creamer");
 			}
+		}
+		
+		@FXML protected void calculateAmountPaid( ActionEvent ae ) {
+			String amountPaid = moneyPutIn.getText();
+			double amountNumber = Double.parseDouble( amountPaid);
+			
 		}
 		
 		
