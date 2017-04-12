@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
+ <?import javafx.scene.image.*?>
  <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
  
 <VBox xmlns:fx="http://javafx.com/fxml"
       fx:controller="Controller"
@@ -46,5 +48,14 @@
     <Button fx:id="cancel" text = "Cancel"
         onAction="#reset"/>
 </HBox>
+<Label>
+   <graphic>
+      <ImageView fitWidth="150" preserveRatio="true" smooth="true">
+        <image>
+          <Image url="featured-image-2.png"/>
+        </image>
+      </ImageView>
+   </graphic>
+</Label>
 </VBox>     
  
