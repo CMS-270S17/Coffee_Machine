@@ -101,7 +101,7 @@ public class Model {
 		}
 		else if(type.equals("Sugar and Creamer")){
 			useCreamer();
-			useSugar()
+			useSugar();
 		}
 		else
 			throw new InvalidInputException("Never heard of this kind of coffee...\n"
