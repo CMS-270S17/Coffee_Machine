@@ -83,9 +83,6 @@ public class Model {
 		else if(amount < price)
 			return "Please put in more money. The price is : " + MONEY.format(price);
 	}
-	public String reset(){
-		
-	}
 	/**
 	 * method sets the coffe's type and calls the methods to make that coffee
 	 * @param type  the type of coffee the user wants
