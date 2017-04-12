@@ -23,7 +23,11 @@
 			onAction="#calculateAmountPaid" />
 	<Button fx:id="enter" text="Enter"
 			onAction="#calculateAmountPaid" />
+	<Button fx:id="go" text="Go"
+			onAction="#go" />
 	<Label text="Amount paid:" />
 	<Label fx:id="amountPaid" text="" />
-	</HBox>
+	<Label text="Change:" />
+	<Label fx:id= "change" text="" />
+</HBox>
 </VBox>	
