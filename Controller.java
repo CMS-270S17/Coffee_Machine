@@ -7,45 +7,45 @@
 	
 public class Controller {
 
-	private double amountNumber;
+private double amountNumber;
 	
-		@FXML private Button blackCoffee, coffeeWithSugar, coffeeWithSugarAndCreamer;
-		@FXML private Label headerText, currentSelection, amountPaid;
-		@FXML private TextField moneyPutIn;
+	@FXML private Button blackCoffee, coffeeWithSugar, coffeeWithSugarAndCreamer, enter, go;
+	@FXML private Label headerText, currentSelection, amountPaid, change;
+	@FXML private TextField moneyPutIn;
+	
+	private CoffeeModel cc; // model
+	
+	public void initialize( ) {
+		cc = new CoffeeModel( );
 		
-		private CoffeeController cc; // model
-		
-		public void initialize( ) {
-			cc = new Model( );
-			
-			headerText.setFont(new Font(20));
-			
+		headerText.setFont(new Font(20));
+		go.setDisable(true);
+	}
+	
+	@FXML protected void setSelection( ActionEvent ae ) {
+		if( ae.getSource( ) == blackCoffee) {
+			cc.setCoffeeType( "Black"); 
+		} else if (ae.getSource( ) == coffeeWithSugar) {
+			cc.setCoffeeType( "Sugar");
+		} else if (ae.getSource( )  == coffeeWithSugarAndCreamer) {
+			cc.setCoffeeType( "Sugar and Creamer");
 		}
-		
-		@FXML protected void setSelection( ActionEvent ae ) {
-			if( ae.getSource( ) == blackCoffee) {
-				cc.setCoffeeType( "Black"); 
-			} else if (ae.getSource( ) == coffeeWithSugar) {
-				cc.setCoffeeType( "Sugar");
-			} else if (ae.getSource( )  == coffeeWithSugarAndCreamer) {
-				cc.setCoffeeType( "Sugar and Creamer");
-			}
-		}
-		
-		@FXML protected void calculateAmountPaid( ActionEvent ae ) {
-			String amountPaid = moneyPutIn.getText();
+	}
+	
+	@FXML protected void calculateAmountPaid( ActionEvent ae ) {
+		double price = .35;
+		String amountPaid = moneyPutIn.getText();
+		 amountNumber += Double.parseDouble( amountPaid);
 
-			double amountNumber = Double.parseDouble( amountPaid);
-			 amountNumber += Double.parseDouble( amountPaid);
-		}
-
-		@FXML protected void go( ActionEvent ae) {
-			
-			cc.calculateChange(amountNumber);
+		 if( amountNumber >= price){
+			 go.setDisable(false);			 
+		 }
+	}
+	
+	@FXML protected void go( ActionEvent ae) {
 		
-		}
+		cc.calculateChange(amountNumber);
 		
 	}
-
 
 }
