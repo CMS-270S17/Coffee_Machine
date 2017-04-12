@@ -76,8 +76,8 @@ public class Model {
 	 *          
 	 */
 	public String calculateChange(double amount){
+		String changeString;
 		if(amount > price){
-			String changeString;
 			double change = amount - price;
 			changeString = "Your change is: "+ MONEY.format(change);
 		}
