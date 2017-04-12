@@ -24,11 +24,11 @@ public class Controller {
 		
 		@FXML protected void setSelection( ActionEvent ae ) {
 			if( ae.getSource( ) == blackCoffee) {
-				cc.setCoffeType( Model.BLACK);
+				cc.setCoffeeType( "Black"); 
 			} else if (ae.getSource( )) == coffeeWithSugar) {
-				cc.setCoffeeType( Model.SUGAR);
+				cc.setCoffeeType( "Sugar");
 			} else if (ae.getSource( ) ) == coffeeWithCreamerAndSugar) {
-				cc.setCoffeeType( Model.CREAMER);
+				cc.setCoffeeType( "Sugar and Creamer");
 			}
 		}
 		
