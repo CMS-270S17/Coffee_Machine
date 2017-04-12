@@ -1,37 +1,3 @@
-<<<<<<< HEAD
-<<?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.control.*?>
-
-<VBox xmlns:fx="http://javafx.com/fxml"
-      fx:controller="Controller"
-      alignment="center" spacing ="10" >
-      <Label fx:id="headerText" text= "Witty Coffee Machine"/>
-<HBox alignment="center"  spacing="10" >
-      <Button fx:id="blackCoffee" text="BlackCoffee"
-                   onAction="#setSelection"/>
-      <Button fx:id="coffeeWithSugar" text="Coffee with Sugar"
-                   onAction="#setSelection"/>
-      <Button fx:id="coffeeWithSugarAndCreamer" text="Coffee with Sugar and Creamer"
-                   onAction="#setSelection"/>
-</HBox>
-<HBox alignment="center" spacing="10" >
-      <Label text="Current Selection" />
-      <Label fx:id="currentSelection" text="" />
-      <TextField fx:id="moneyPutIn" maxWidth="50"
-                   onAction="#calculateAmountPaid" />
-      <Button fx:id="enter" text="Enter"
-                   onAction="#calculateAmountPaid" />
-      <Button fx:id="go" text="Go"
-                   onAction="#go" />
-      <Label text="Amount paid:" />
-      <Label fx:id="amountPaid" text="" />
-      <Label text="Change:" />
-      <Label fx:id= "change" text="" />
-</HBox>
-</VBox>     
-
-=======
 <?xml version="1.0" encoding="UTF-8"?>
  
  
@@ -70,4 +36,3 @@
      
 </HBox>
 </VBox>     
->>>>>>> branch 'master' of https://github.com/CMS-270S17/Coffee_Machine.git
