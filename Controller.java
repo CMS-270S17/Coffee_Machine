@@ -34,10 +34,11 @@ public class Controller {
 		
 		@FXML protected void calculateAmountPaid( ActionEvent ae ) {
 			String amountPaid = moneyPutIn.getText();
-			 amountNumber += Double.parseDouble( amountPaid);
 
+			double amountNumber = Double.parseDouble( amountPaid);
+			 amountNumber += Double.parseDouble( amountPaid);
 		}
-		
+
 		@FXML protected void go( ActionEvent ae) {
 			
 			cc.calculateChange(amountNumber);
@@ -45,5 +46,6 @@ public class Controller {
 		}
 		
 	}
+
 
 }
