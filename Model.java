@@ -83,6 +83,27 @@ public class Model {
 		else if(amount < price)
 			return "Please put in more money. The price is : " + MONEY.format(price);
 	}
+	public String reset(){
+		
+	}
+	/**
+	 * method sets the coffe's type and calls the methods to make that coffee
+	 * @param type  the type of coffee the user wants
+	 */
+	public void setCoffeeType(String type){
+		
+		if(type.equals("Black")
+		else if(type.equals("Sugar")){
+			useSugar();
+		}
+		else if(type.equals("Sugar and Creamer")){
+			useCreamer();
+			useSugar()
+		}
+		else
+			throw new InvalidInputException("Never heard of this kind of coffee...\n"
+					+"Please put in Black, Sugar, or Sugar and Creamer");
+	}
 	/**
 	 * toString method for the Coffee Machine
 	 * @return price      the cost of the coffee
