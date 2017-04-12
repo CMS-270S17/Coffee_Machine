@@ -20,7 +20,9 @@
 	<Label text="Current Selection" />
 	<Label fx:id="currentSelection" text="" />
 	<TextField fx:id="moneyPutIn" maxWidth="50"
-			onAction="#calulateAmountPaid" />
+			onAction="#calculateAmountPaid" />
+	<Button fx:id="enter" text="Enter"
+			onAction="#calculateAmountPaid" />
 	<Label text="Amount paid:" />
 	<Label fx:id="amountPaid" text="" />
 	</HBox>
