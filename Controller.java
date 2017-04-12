@@ -23,9 +23,9 @@ public class Controller {
 		@FXML protected void setSelection( ActionEvent ae ) {
 			if( ae.getSource( ) == blackCoffee) {
 				cc.setCoffeeType( "Black"); 
-			} else if (ae.getSource( )) == coffeeWithSugar) {
+			} else if (ae.getSource( ) == coffeeWithSugar) {
 				cc.setCoffeeType( "Sugar");
-			} else if (ae.getSource( ) ) == coffeeWithCreamerAndSugar) {
+			} else if (ae.getSource( )  == coffeeWithSugarAndCreamer) {
 				cc.setCoffeeType( "Sugar and Creamer");
 			}
 		}
