@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
- 
-<?import javafx.scene.layout.*?>
+ <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
  
 <VBox xmlns:fx="http://javafx.com/fxml"
@@ -11,11 +10,17 @@
      
 <HBox alignment="center"  spacing="10" >
  
-      <Button fx:id="blackCoffee" text="BlackCoffee"
+ <fx:define>
+    <ToggleGroup fx:id="radioToggleGroup" />
+   </fx:define>
+      <RadioButton fx:id="blackCoffee" text="BlackCoffee"
+                 toggleGroup="$radioToggleGroup" 
                    onAction="#setSelection"/>
-      <Button fx:id="coffeeWithSugar" text="Coffee with Sugar"
+      <RadioButton fx:id="coffeeWithSugar" text="Coffee with Sugar"
+                 toggleGroup="$radioToggleGroup"
                    onAction="#setSelection"/>
-      <Button fx:id="coffeeWithSugarAndCreamer" text="Coffee with Sugar and Creamer"
+      <RadioButton fx:id="coffeeWithSugarAndCreamer" text="Coffee with Sugar and Creamer"
+                 toggleGroup="$radioToggleGroup"
                    onAction="#setSelection"/>
 </HBox>
      
@@ -35,4 +40,9 @@
       <Label fx:id= "change" text="" />
      
 </HBox>
+<HBox alignment="center" spacing="10">
+    <Button fx:id="cancel" text = "Cancel"
+        onAction="#reset"/>
+</HBox>
 </VBox>     
+ 
