@@ -19,6 +19,8 @@
 </HBox alignment="right" spacing="10" >
 	<Label text="Current Selection" />
 	<Label fx:id="currentSelection" text="" />
+	<TextField fx:id="moneyPutIn" maxWidth="50"
+			onAction="#calulateAmountPaid" />
 	<Label text="Amount paid:" />
 	<Label fx:id="amountPaid" text="" />
 	</HBox>
