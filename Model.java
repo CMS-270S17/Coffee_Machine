@@ -77,11 +77,12 @@ public class Model {
 	 */
 	public String calculateChange(double amount){
 		if(amount > price){
+			String changeString;
 			double change = amount - price;
-			String changeString= "Your change is: "+ MONEY.format(change);
+			changeString = "Your change is: "+ MONEY.format(change);
 		}
 		else if(amount < price){
-			String changeString ="Please put in more money. The price is : " + MONEY.format(price);
+			changeString = "Please put in more money. The price is : " + MONEY.format(price);
 		}
 		return changeString;
 	}
