@@ -26,15 +26,17 @@
      
 <HBox alignment="center" spacing="10" >
  
-      <Label text="Current Selection" />
-      <Label fx:id="currentSelection" text="" />
       <TextField fx:id="moneyPutIn" maxWidth="50"
                    onAction="#calculateAmountPaid" />
       <Button fx:id="enter" text="Enter"
                    onAction="#calculateAmountPaid" />
       <Button fx:id="go" text="Go"
                    onAction="#go" />
-      <Label text="Amount paid:" />
+      
+</HBox>
+
+<HBox alignment="center" spacing="10" >
+<Label text="Amount paid:" />
       <Label fx:id="amountPaid" text="" />
       <Label text="Change:" />
       <Label fx:id= "change" text="" />
