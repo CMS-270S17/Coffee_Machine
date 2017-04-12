@@ -41,6 +41,7 @@ public class Controller {
 		@FXML protected void go( ActionEvent ae) {
 			
 			cc.calculateChange(amountNumber);
+		
 		}
 		
 	}
