@@ -10,15 +10,19 @@
 	<Label fx:id="headerText" text= "Witty Coffee Machine"/>
 </HBox alignment="left"  spacing="10" >
 	<Button fx:id="blackCoffee" text="BlackCoffee" 
-			onAction="#dispense"/>
+			onAction="#setSelection"/>
 	<Button fx:id="coffeeWithSugar" text="Coffee with Sugar" 
-			onAction="#dispense"/>
+			onAction="#setSelection"/>
 	<Button fx:id="coffeeWithSugarAndCreamer" text="Coffee with Sugar and Creamer" 
-			onAction="#dispense"/>
+			onAction="#setSelection"/>
 	</HBox>
 </HBox alignment="right" spacing="10" >
 	<Label text="Current Selection" />
 	<Label fx:id="currentSelection" text="" />
+	<TextField fx:id="moneyPutIn" maxWidth="50"
+			onAction="#calculateAmountPaid" />
+	<Button fx:id="enter" text="Enter"
+			onAction="#calculateAmountPaid" />
 	<Label text="Amount paid:" />
 	<Label fx:id="amountPaid" text="" />
 	</HBox>
