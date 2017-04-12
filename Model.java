@@ -78,10 +78,13 @@ public class Model {
 	public String calculateChange(double amount){
 		if(amount > price){
 			double change = amount - price;
-			return "Your change is: "+ MONEY.format(change);
+			String changeString= "Your change is: "+ MONEY.format(change);
+			return changeString;
 		}
-		else if(amount < price)
-			return "Please put in more money. The price is : " + MONEY.format(price);
+		else if(amount < price){
+			String changeString ="Please put in more money. The price is : " + MONEY.format(price);
+			return changeString;
+		}
 	}
 	/**
 	 * method sets the coffe's type and calls the methods to make that coffee
@@ -89,7 +92,10 @@ public class Model {
 	 */
 	public void setCoffeeType(String type){
 		
-		if(type.equals("Black")
+		if(type.equals("Black"){
+			
+		}
+				
 		else if(type.equals("Sugar")){
 			useSugar();
 		}
