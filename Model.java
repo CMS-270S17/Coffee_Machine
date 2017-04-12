@@ -92,7 +92,7 @@ public class Model {
 	 */
 	public void setCoffeeType(String type){
 		
-		if(type.equals("Black"){
+		if(type.equals("Black")){
 			
 		}
 				
@@ -104,7 +104,7 @@ public class Model {
 			useSugar();
 		}
 		else
-			throw new InvalidInputException("Never heard of this kind of coffee...\n"
+			throw new IllegalArgumentException("Never heard of this kind of coffee...\n"
 					+"Please put in Black, Sugar, or Sugar and Creamer");
 	}
 	/**
